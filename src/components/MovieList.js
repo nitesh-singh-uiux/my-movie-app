@@ -20,6 +20,7 @@ function MovieList() {
   // movie list show karna ka liya
   useEffect(() => {
     const apiKey = process.env.REACT_APP_OMDB_API_KEY;
+    console.log(apiKey);
     if (searchQuery.length < 3) {
       setMovieLists([]);
       setIsLoading(false);
