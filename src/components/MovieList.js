@@ -29,7 +29,7 @@ function MovieList() {
     setIsLoading(true); // API call se pehle loading true karein
     setError(null); // Error ko bhi reset karein
 
-    const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`;
+    const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`;
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
